@@ -1,13 +1,15 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink,Link} from 'react-router-dom';
+import { Form, Button, FormGroup, FormControl, ControlLabel,Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+
 
 const Navigation =()=>{
     return(
-        <div>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">about</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
-        </div>
+            <ul>
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/contact">Contact</NavLink></li>
+            </ul>
     );
 }
 
